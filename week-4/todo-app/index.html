@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>   
+    function add2(){
+        const a =  document.getElementById("number1").value;
+        const b = document.getElementById("number2").value;
+        document.getElementById("finalsum").innerHTML =  parseInt(a) + parseInt(b);
+    }
+    // debouncing, -> Holding off the app to send response to backend for evry input stroke
+    //-> clear the existing clock and start a new clock
+</script>
+<body>
+    <div>
+        <label> number1 : </label>
+        <input type="text" id="number1" placeholder="first"/>
+        <br/>
+        <label> number1 : </label>
+        <input type="text" id="number2" placeholder="second"/>
+        <input type="button" onclick="add2()"/>
+        <div id = "finalsum"></div>
+    </div>
+</body>
+</html>
